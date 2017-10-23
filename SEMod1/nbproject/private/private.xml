@@ -3,7 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/AUX_ALMACEN%20SALADO/Desktop/javaSE/SE/SEMod1/src/semod1/UsoEmpleado.java</file>
+=======
+            <file>file:/home/developer/Documentos/java/SE/SEMod1/src/Herencia/UsoEmpleado.java</file>
+            <file>file:/home/developer/Documentos/java/SE/SEMod1/src/Herencia/Jefes.java</file>
+>>>>>>> refs/remotes/origin/master
         </group>
     </open-files>
 </project-private>

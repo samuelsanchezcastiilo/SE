@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package semod1;
+package Herencia;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -23,12 +23,19 @@ public class UsoEmpleado {
         //empleado.subeSueldo(5);
         //System.out.println(empleado.dameNombre() + empleado.dameSueldo() +empleado.dameFechaContrato());
         
-        Empleado [] misEmpleados  = new Empleado[4];
-        misEmpleados[0]= new Empleado("samuel",  737000, 2017, 02, 02);
-        misEmpleados[1]= new Empleado("samuel2", 837000, 2017, 02, 02);
-        misEmpleados[2]= new Empleado("samuel3", 937000, 2017, 02, 02);
-        misEmpleados[3] = new Empleado("samuel11");
+
+        Jefes jefeSistemas = new Jefes("samuel",737000, 2017,2,20);
+        jefeSistemas.estableceIncetivo(10000);
         
+        Empleado [] misEmpleados  = new Empleado[6];
+        misEmpleados[0]= new Empleado("sameul",  737000, 2017, 02, 02);
+        misEmpleados[1]= new Empleado("sameul2", 837000, 2017, 02, 02);
+        misEmpleados[2]= new Empleado("sameul3", 937000, 2017, 02, 02);
+        misEmpleados[3] = new Empleado("samuel11");
+        misEmpleados[4] = jefeSistemas;//polimorfismo en accion principo de sustitucion;
+        misEmpleados[5]  = new Jefes("samueljefe", 90000, 2010, 05, 20); //mas polimorfismo en accion
+        Jefes jefe = (Jefes) misEmpleados[5]; //refundicion de objetos en la herencia 
+        jefe.estableceIncetivo(20000);
 
         
         for(Empleado e: misEmpleados) 
@@ -48,6 +55,8 @@ class Empleado{
       private String nombre;
       private double sueldo;
       private Date altaContrato;
+      private static int IdSiguieente;
+      private int id;
     
     public Empleado(String nom ,double suel, int anno,int mes, int dia)
     {
@@ -55,14 +64,18 @@ class Empleado{
         this.sueldo = suel;
         GregorianCalendar calendar = new GregorianCalendar(anno,mes-1,dia);
         this.altaContrato = calendar.getTime();
+        ++IdSiguieente;
+        id = IdSiguieente;
+        
     }
     public Empleado(String nom)
     {
-        nombre=nom;
+
+        this(nom, 10, 2010, 02, 20);
     }
     public  String dameNombre()//getter
     {
-        return nombre;
+        return nombre +" id "+id;
     }
     public double dameSueldo()//getter
     {
