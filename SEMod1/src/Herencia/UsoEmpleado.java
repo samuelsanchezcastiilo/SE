@@ -31,10 +31,9 @@ public class UsoEmpleado {
         misEmpleados[1]= new Empleado("sameul2", 837000, 2017, 02, 02);
         misEmpleados[2]= new Empleado("sameul3", 937000, 2017, 02, 02);
         misEmpleados[3] = new Empleado("samuel11");
- 
         misEmpleados[4] = jefeSistemas;//polimorfismo en accion principo de sustitucion;
         misEmpleados[5]  = new Jefes("samueljefe", 90000, 2010, 05, 20); //mas polimorfismo en accion
-        Jefes jefe = (Jefes) misEmpleados[5];
+        Jefes jefe = (Jefes) misEmpleados[5]; //refundicion de objetos en la herencia 
         jefe.estableceIncetivo(20000);
 
         

@@ -9,7 +9,7 @@ package Herencia;
  *
  * @author developer
  */
-public class Jefes extends Empleado
+final  class  Jefes extends Empleado
 {
    
     public  Jefes(String nom,double sueldo , int ano,int mes ,int dia)
@@ -27,7 +27,5 @@ public class Jefes extends Empleado
         return incentivo+sueldoJefe;
     }
     private double incentivo;
-    
-    
-    
+   
 }
