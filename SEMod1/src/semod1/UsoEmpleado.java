@@ -24,9 +24,9 @@ public class UsoEmpleado {
         //System.out.println(empleado.dameNombre() + empleado.dameSueldo() +empleado.dameFechaContrato());
         
         Empleado [] misEmpleados  = new Empleado[4];
-        misEmpleados[0]= new Empleado("sameul",  737000, 2017, 02, 02);
-        misEmpleados[1]= new Empleado("sameul2", 837000, 2017, 02, 02);
-        misEmpleados[2]= new Empleado("sameul3", 937000, 2017, 02, 02);
+        misEmpleados[0]= new Empleado("samuel",  737000, 2017, 02, 02);
+        misEmpleados[1]= new Empleado("samuel2", 837000, 2017, 02, 02);
+        misEmpleados[2]= new Empleado("samuel3", 937000, 2017, 02, 02);
         misEmpleados[3] = new Empleado("samuel11");
         
 
