@@ -19,7 +19,8 @@ public class Vectores {
         
         VectoresParalelos vectorpParalelos  =  new VectoresParalelos(5);
         vectorpParalelos.asignarDatos();
-        
+        vectorpParalelos.obtenerArray();
+        vectorpParalelos.mayoresEdad();
         
     }
     
@@ -38,7 +39,7 @@ class VectoresParalelos
     {
       edades =  new int[tamanoVector];
       nombre =  new String[tamanoVector];
-      asignarDatos();
+    
     }
     
     public void asignarDatos()
@@ -50,7 +51,7 @@ class VectoresParalelos
              System.out.println("Ingrese la edad de: "+ nombre[i]);
              edades[i] = scanner.nextInt();
         }
-        obtenerArray();
+   
       
     }
     
@@ -61,7 +62,7 @@ class VectoresParalelos
              System.out.println("el estudiante: " + nombre[i] + "tiene: " + edades[i]);
              System.out.println();
         }
-        mayoresEdad();
+
     }
     public void mayoresEdad()
     {
